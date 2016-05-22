@@ -1,10 +1,18 @@
 def s
-    si
+    if $argc == 0
+        si
+    else
+        si $arg0
+    end
     x/15i $eip
 end
 
 def n
-    ni
+    if $argc == 0
+        ni
+    else
+        ni $arg0
+    end
     x/15i $eip
 end
 
